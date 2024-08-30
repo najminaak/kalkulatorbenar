@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="25dp"
+    >
+
+    <!-- Display for Input -->
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="48sp" />
+
+    <!-- Display for Output -->
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textSize="36sp"
+        android:textColor="@color/colorBlue" />
+
+    <!-- Button Layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorWhite">
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_7"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_8"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_9"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="@string/divide"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorWhite">
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_4"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_5"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_6"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="*"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorWhite">
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_1"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_2"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_3"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="@string/btnPlus"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+        <!-- row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorWhite">
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="@string/_leftB"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="@string/_rightB"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <Button
+                style="@style/button"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_background"
+                android:onClick="onOperator"
+                android:text="@string/btnDots"
+                android:textColor="@color/colorGray"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onOperator"
+                android:text="@string/btnMinus"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorRed"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <!-- Row 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorWhite">
+
+            <Button
+                style="@style/button"
+                android:onClick="onClear"
+                android:text="@string/c"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background_red"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"/>
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_0"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/button"
+                android:onClick="onDigit"
+                android:text="@string/_00"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorGray"
+                android:layout_margin="5dp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/button"
+                android:onClick="onCalculate"
+                android:text="@string/btnEquals"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_background_blue"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
